@@ -49,12 +49,12 @@
 ### :fire: GitHub Stats
 <!-- https://github.com/anuraghazra/github-readme-stats -->
 <br>
-<div align=center>
+<div align="center">
   <a href="#" title="sung2708">
-    <img width="300" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sung2708&layout=donut&theme=react"/>
+    <img width="300" align="center" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=sung2708&layout=donut&theme=react"/>
   </a>
   <a href="#" title="sung2708">
-    <img width="415" align="right" src="https://github-readme-stats.vercel.app/api?username=sung2708&theme=react&show_icons=true" />
+    <img width="415" align="right" src="https://github-readme-stats-eight-theta.vercel.app/api?username=sung2708&theme=react&show_icons=true" />
   </a>
 </div>
 
