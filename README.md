@@ -8,7 +8,7 @@
 ### :rocket:  About me 
 
 
-:mortar_board: *I am a final year student at VNU-HCM University of Science*
+:mortar_board: *I studied at VNU-HCM University of Science and currently work as a Full-stack Developer.*
 
 :computer: Hey! *I specialize in backend development for web apps. My toolkit includes Node.js and Python, along with Express.js and Django frameworks. I'm also well-versed in HTML/CSS and JavaScript. Let's craft some impressive solutions together!*
 
