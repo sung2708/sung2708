@@ -8,7 +8,7 @@
 
 :mortar_board: _I studied at the University of Science, VNU-HCM, and work as a full-stack developer._
 
-:computer: _I focus on backend development for web applications, Python,Golang and their framework. I also work with HTML, CSS, and JavaScript._
+:computer: _I focus on backend development for web applications, Python, Golang and their framework. I also work with HTML, CSS, and JavaScript._
 
 :information_desk_person: _I'm interested in the technologies around web development, especially cloud computing, DevOps, and AI._
 
@@ -29,10 +29,10 @@
 ### :hammer: Languages-Frameworks-Tools
 
 <div align="center">
-    <img src="https://skillicons.dev/icons?i=vscode,pycharm,mysql,mongodb,sqlite" /><br>
-    <img src="https://skillicons.dev/icons?i=docker,github,ubuntu,bash" /><br>
-    <img src="https://skillicons.dev/icons?i=nodejs,express,python,django,cpp" /><br>
-    <img src="https://skillicons.dev/icons?i=html,css,javascript,scss,tailwind,react,bootstrap" /><br>
+    <img src="https://skillicons.dev/icons?i=vscode,neovim,docker,bash,github,ubuntu" /><br>
+    <img src="https://skillicons.dev/icons?i=python,fastapi,django,golang,java" /><br>
+    <img src="https://skillicons.dev/icons?i=postgres,mongodb,mysql,supabase" /><br>
+    <img src="https://skillicons.dev/icons?i=html,css,tailwind,react,nextjs" /><br>
 
 </div>
 
