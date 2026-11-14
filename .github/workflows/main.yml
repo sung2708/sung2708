@@ -1,0 +1,65 @@
+name: Generate Snake
+
+# Update the contribution snake once a day.
+on:
+  schedule:
+    - cron: "0 4 * * *"
+
+  # This command allows us to run the Action manually from the Actions tab.
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository content
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      # Generate the snake animation
+      - name: Generate snake animation
+        uses: Platane/snk@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        id: snake-gif
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.gif
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}  # Sử dụng PAT_TOKEN thay cho GITHUB_TOKEN
+
+      # Show the status of the build
+      - name: Show build status
+        run: git status
+
+      # Checkout the "output" branch to push the new snake images there
+      - name: Checkout output branch
+        run: |
+          git fetch origin
+          git checkout -B output origin/output || git checkout --orphan output
+
+      # Copy the generated files to output branch
+      - name: Copy generated files to output branch
+        run: |
+          cp -r dist/* .
+
+      # Push the new files to the output branch
+      - name: Push new snake images to output branch
+        uses: crazy-max/ghaction-github-pages@1d6ee9b181a81033a16bd707a1401afa978daab4 # v5.0.0
+        with:
+          target_branch: output
+          build_dir: .
+          commit_message: "Update snake animations"
+          author: "sung2708 <aki18082002@gmail.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Clean up the directory after pushing
+      - name: Clean up
+        run: git reset --hard
